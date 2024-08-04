@@ -1,0 +1,145 @@
+.posts-main-title{
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+}
+
+.posts-core-items{
+    max-width: 75%;
+    margin: auto;
+}
+
+.post-details-container{
+    display: flex;
+    margin-top: 50px;
+}
+
+.post-details{
+    flex: 1;
+    min-height: 75px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid white;
+    margin: 1px;
+    padding-left: 1px;
+    padding-bottom: 5px;
+    background-color: rgb(23, 23, 54);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.post-title-container{
+    flex: 7;
+    min-height: 75px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: 1px;
+    padding-left: 1px;
+    padding-bottom: 5px;
+    background-color: rgb(23, 23, 54);
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-post{
+    flex: 1;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 1px;
+}
+
+.post-date, 
+.post-title, 
+.post-description{
+    font-weight: bold;
+}
+
+.post-title{
+    font-size: x-large ;
+}
+
+.post-description{
+    color: lightcoral;
+}
+
+.chart-n-details{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-chart-container{
+    flex: 1;
+    min-height: 400px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid white;
+    border-left: 0;
+    padding-left: 1px;
+    max-width: 50%;
+}
+
+.post-chart-details-container{
+    flex: 1;
+    min-height: 400px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 1px;
+    max-width: 50%;
+}
+
+.posts-footer-icon{
+    float: left;
+}
+
+.chart-footer-data{
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.dataset-link{
+    all: unset;
+    text-decoration: underline;
+}
+
+.dataset-link:hover{
+    cursor: pointer;
+}
+
+@media(max-width:800px){
+
+    .chart-n-details{
+        flex-direction: column;
+    }
+
+    .post-chart-container{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .post-chart-details-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .chart-footer-data{
+        text-align: right;
+    }
+    
+
+}
+

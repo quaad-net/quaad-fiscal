@@ -1,0 +1,22 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>quaad.net</title>
+    <link rel="icon" href= "{% static '/img/circled-q-blk.png' %}" />
+    <link rel="stylesheet" href= "{% static '/css/main_styles.css' %}" />
+    {% block addstyles %}
+    {% endblock %}
+  </head>
+  <div class="nav">
+  </div>
+  <div class="divider"></div>
+  {% block mycontent %}
+  <div id="main-contact"></br><strong>Contact:</strong></br>eukoh@quaad.net</div>
+  {% endblock %}
+  <div id="footer-illus-container-1">
+    <img id="footer-illus-1" src="{% static '/img/simplistic-web-analytics-on-computer-screen.svg' %}" alt="analytics" height=200px width=250px></img>
+  </div>
+</html>

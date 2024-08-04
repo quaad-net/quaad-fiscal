@@ -1,0 +1,895 @@
+:root {
+    --sidebar-purple: rgb(23, 23, 54);
+    --secondary-purple: rgb(36, 36, 82);
+    --dark-gray: rgb(32, 32, 32);
+    --alt-dark-gray: #252525; 
+    --alt-dark-gray-2: #2a2a2a;
+    --outline-gray: rgb(68, 68, 68);
+    --outline-gray-2: rgb(78, 78, 78);
+    --off-html: #2a2a2a;
+    --modal-background: rgba(0, 0, 0, 0.777);
+    --modal-background-lighter: rgba(11, 11, 11, 0.4);
+    --category-values: rgb(179, 179, 179);
+  }
+  
+html{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+@keyframes slide-left {
+    from {left: 100vw;}
+    to {left: 0vw;}
+  }
+
+.mobile-header{
+    z-index: 1;
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color:rgb(23, 23, 54);
+    /*
+    animation-name: slide-left;
+    animation-duration: 0.5s;
+    */
+}
+
+.mb-icon-menu:hover{
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+.header-tabs{
+    float: right;
+}
+
+.mb-tab-btn{
+    all: unset;
+    position: relative;
+    box-sizing: border-box;
+    width: 75px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    right: 20px;
+    top: 7px;
+}
+
+.mb-tab-btn:hover, 
+.mb-tab-btn:focus{
+    background-color: rgb(102, 1, 1);
+    cursor: pointer;
+}
+
+#about-btn{
+    all: unset;
+    position: relative;
+    box-sizing: border-box;
+    width: 75px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    right: 20px;
+    top: 7px;
+}
+
+#about-btn:hover{
+    background-color: rgb(102, 1, 1);
+    cursor: pointer;
+}
+
+@keyframes slide-down {
+    from {top: -100vw;}
+    to {top: 0vw;}
+  }
+
+.sidebar{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100rem;
+    background-color: rgb(23, 23, 54);
+    background-color: rgba(23, 23, 54, 0.771);
+    border-radius: 10px;
+    animation-name: slide-down;
+    animation-duration: 0.5s;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar-close{
+    display: sticky;
+    color: white;
+    float: right;
+    margin-right: 10px;
+    top: 5px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.sidebar-close:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.logo, .icon-logo{
+    display: inline;
+}
+
+.icon-logo{
+    position: relative;
+    margin-left: 15px; 
+    top: 7px;
+}
+
+.logo{
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.divider{
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+}
+
+.field {
+    position: relative;
+    margin: auto;
+}
+
+
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    outline: none;
+  }
+  
+  .textInputWrapper:focus-within .textInput,
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    background-color: #353535;
+  }
+  
+  .textInputWrapper:focus-within .textInput::placeholder {
+    opacity: 0;
+  }
+  
+input{
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    cursor: text;
+    margin: 0em;
+    padding: 1px 0px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    padding-block: 1px;
+    padding-inline: 2px;
+    padding-left: 3px;
+    color: white;
+    height: 35px;
+    margin-bottom: 2px;
+}
+
+#input-1{
+    padding-right: 25px;
+    background: url("../img/icons8-calendar.svg") no-repeat right;
+    background-size: 20px;
+    background-color: rgb(32, 32, 32);
+    width: 50px;
+    margin-left: 65px;
+}
+
+#input-1:focus{
+    background-color: #353535;
+}
+
+#input-2{
+    padding-right: 25px;
+    background: url("../img/icons8-date-to.svg") no-repeat right;
+    background-size: 20px;
+    background-color: rgb(32, 32, 32);
+    width: 50px;
+    margin-left: 65px;
+}
+
+#input-2:focus{
+    background-color: #353535;
+}
+
+::placeholder{
+    color:white;
+}
+
+#qryBtn:hover, #qryBtn:focus{
+    background-color: rgb(102, 1, 1);
+    background: linear-gradient(180deg, rgb(102, 1, 1), rgb(54, 0, 0));
+} 
+
+#qryBtn{
+    box-sizing: border-box;
+    width: 75px;
+    text-align: center;
+    font-size: small;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 68px; 
+    margin-top: 20px;
+}
+
+#qryBtn:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    position: relative;
+    top: 75px;
+    box-sizing: border-box;
+    height: 1px;
+}
+
+.core-items{
+    max-width: 75%;
+    margin: auto;
+    padding-left: 35px;
+}
+
+.main-title{
+    box-sizing: border-box;
+    height: 75px;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.main-title-line{
+    margin-top: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.subtitle{
+    color: lightcoral;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.title-btn{
+    box-sizing: border-box;
+    width: 75px;
+    text-align: center;
+    font-size: small;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title-btn:hover, .title-btn:focus{
+    background-color: rgb(102, 1, 1);
+    background: linear-gradient(180deg, rgb(102, 1, 1), rgb(54, 0, 0));
+}
+
+.expd-n-debt{
+    display: flex;
+    flex-direction: row;
+}
+
+#hlpr-USGovExpenditures, #hlpr-USGovDebt{
+    position: absolute;
+}
+
+.helper-icon:hover{
+    background-color: rgb(32, 32, 32);
+    background-color: rgba(32, 32, 32, 0.349);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.main-series{
+    flex: 0.5;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+}
+
+#main-series-1{
+    border-bottom-right-radius: 0;
+}
+
+.chartcontainer{
+    height: 350px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#main-series-2{
+    border-left: 1px solid white;
+    border-top-left-radius: 0;
+}
+
+.debt-chartcontainer{
+    height: 350px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.outlays-n-aux{
+    display: flex;
+    flex-direction: row;
+}
+
+.outlays-header{
+    display: flex;
+    border: 0;
+    border-radius: 5px;
+}
+
+.outlays-header-items{
+    flex: 1;
+    padding: 5px;
+}
+
+.pre-title{
+    font-weight: bold;
+}
+
+#tb2{
+    margin-top: 25px;
+}
+
+.outlays-container{
+    display: flex;
+}
+
+.outlays-cht-container{
+    flex: 1;
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+}
+
+.aux1-header{
+    display: flex;
+    border: 1px solid white;
+    border-left: 0;
+    border-bottom: 0;
+    border-radius: 5px;
+    border-top: 0;
+}
+
+.aux1-header-items{
+    flex: 1;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.aux1-table{
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    width: 100%;
+    border-top: 1px solid white;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    font-size: medium;
+}
+
+.aux1-table div{
+    padding-left: 10px;
+    border-radius: 2px;
+}
+
+.aux1-table div:nth-of-type(odd){
+    border: 1px solid rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.aux1-table div:nth-of-type(odd):hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.outlay-perct{
+    color: rgb(179, 179, 179);
+}
+
+.receipts-n-aux{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.receipts-aux{
+    flex: 0.5;
+    font-size: medium;
+    margin-top: 10px;
+    border-top: 1px solid white;
+    padding: 5px;
+}
+
+.receipts-cht-container{
+    flex: 3.5;
+    height: 350px;
+    width: 95%;
+    border-top: 1px solid white;
+    margin-top: 10px;
+}
+
+#receipts-cht{
+    margin-left: 10px;
+}
+
+.select-econ-data{
+    display: flex;
+    flex-direction: row;
+}
+
+.econ-title{
+    font-weight: bold;
+    flex: 0.5;
+    padding: 5px;
+}
+
+#hlpr-SelectEconData{
+    display: block;
+}
+
+.econ-data-groups{
+    width: 100%;
+    text-align: center;
+    flex: 3.5;
+}
+
+.econ-group{
+    font-weight: bold;
+}
+
+.econ-group-1{
+    display: flex;
+    flex-direction: row;
+}
+
+#price-indices, #production-n-consumption{
+    box-sizing: border-box;
+    flex: 1;
+    width: 50%;
+    height: 100px;
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 5px;
+    margin: 5px;
+    padding-top: 35px;
+}
+
+.econ-group-2{
+    display: flex;
+    flex-direction: row;
+}
+
+#population, #interest-rates, #imports-n-exports{
+    box-sizing: border-box;
+    flex: 1;
+    width: calc(100/3);
+    height: 100px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    margin: 5px;
+    padding-top: 35px;
+}
+
+#price-indices:hover, 
+#production-n-consumption:hover, 
+#population:hover, 
+#interest-rates:hover, 
+#imports-n-exports:hover{
+    border-width: 3px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2;
+    left: 0;
+    top: 0px;
+    width: 100%; 
+    height: 100rem; 
+    max-height: 100%;
+    overflow: auto;
+    background-color: rgb(32, 32, 32); 
+    background-color: rgba(11, 11, 11, 0.4); 
+}
+
+.options-modal-content {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 25%;
+    margin: auto;
+    padding: 0;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    top: 50px;
+    background-color: rgb(23, 23, 54);
+    background-color: rgba(32, 32, 32, 0.653);
+}
+
+.modal-icon{
+    float: left;
+    position: relative;
+    top:19px;
+}
+
+.close {
+  color: white;
+  float: right;
+  margin-bottom: 50px;
+  font-size: 28px;
+  font-weight:bolder;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    margin-bottom: 25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid white;
+}
+
+.modal-header-text{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.modal-subtitle{
+    color: lightcoral;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.modal-body {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal-body button{
+    all: unset;
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.modal-body button, .modal-body p{
+    font-size: medium;
+    font-family: poppins, sans-serif;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+}
+
+.modal-body button:hover, .modal-body button:focus{
+    border: 2px solid white;
+}
+
+.modal-footer {
+    box-sizing: border-box;
+    height: 10px;
+    width: 100%;
+}
+
+
+#aux-modal{
+    background-color: rgba(0, 0, 0, 0.777);
+}
+
+.aux-table-modal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aux-table-modal-data{
+    color: white;
+    max-width: 350px;
+    min-height: 350px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(78, 78, 78, 0.164); 
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.aux-table-modal-data:hover{
+    border: 1px solid white;
+}
+
+.aux-table-modal-row{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#hlpr-info{
+    overflow-wrap: break-word;
+}
+
+.aux-table-modal-close{
+    position: relative;
+    float: right;
+    left: 22px; 
+    bottom: 25px;
+    color: white;
+    font-size: 28px;
+    font-weight:bolder;
+}
+
+.aux-table-modal-close:hover,
+.aux-table-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aux-table-modal-header{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.aux-table-modal-header, .aux-table-modal-row{
+    border-radius: 2px;
+    border: 1px solid rgb(78, 78, 78); 
+}
+
+.aux-table-modal-row:nth-of-type(even){
+    background-color: #232323;
+}
+
+
+.aux-table-modal-row:hover{
+    border: 1px solid white
+}
+
+/* Econ Table Modal */
+
+#econ-table-modal{
+    background-color: rgba(0, 0, 0, 0.777)
+}
+
+.outer-container{
+    padding: 30px;
+    margin:auto;
+}
+
+.econ-table-modal-close{
+    float: right;
+    font-size: 28px;
+    font-weight:bolder;
+}
+
+.econ-table-modal-close:hover{
+    cursor: pointer;
+    color: rgb(107, 106, 106);
+}
+
+.table-container{
+    position: relative;
+    top: 50px;
+    max-width: 800px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: white rgb(32, 32, 32);
+    margin: auto;
+}
+
+table{
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 5px;
+    margin: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.544);
+}
+
+th{
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+th, td{
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 2px;
+}
+
+td{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+tbody tr:hover{
+    background-color: rgb(63, 63, 63);
+}
+/* End - Econ Table Modal */
+
+
+@media(max-width:1000px) {
+
+    .expd-n-debt{
+        display: block;
+    }
+
+    #main-series-1{
+        border-bottom-right-radius: 5px;
+    }
+
+    #main-series-2{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .outlays-n-aux{ 
+        display: block;
+    }
+
+    #tb2{
+        position: relative;
+        float: right;
+        bottom: 25px;
+        margin-right: 5px;
+    }
+
+    .outlays-header, .aux1-header{
+        border-right: 1px solid white;
+    }
+
+    .outlays-container{
+        border: 1px solid white;
+        border-right: 0;
+        border-bottom: 0;
+        border-radius: 5px;
+    }    
+
+    .aux1-header{
+        border-top: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .aux1-table{
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .receipts-n-aux{
+        display: block;
+    }
+
+    .receipts-aux{
+        margin-top: 0;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .receipts-cht-container{
+        width: 100%;
+        margin-top: 0;
+        border: 0;
+        border-left: 1px solid white;
+        border-radius: 5px;
+        border-bottom: 1px solid white;
+        border-bottom-right-radius: 5px;
+    }
+
+    .select-econ-data{
+        display: block;
+    }
+
+    .econ-title{
+        border: 1px solid white;
+        border-left: 0;
+        border-top: 0;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width:700px){
+    .options-modal-content{
+        width: 50%;
+    }
+}
+
+@media(max-width:500px){
+
+    .core-items{
+        margin-left: 0;
+    }
+
+    .main-title{
+        text-align: center;
+    }
+    
+    .chartcontainer, .debt-chartcontainer, .outlays-cht-container{
+        height: 250px;
+    }
+
+    .outlays-cht-container{
+        width: 95%;
+    }
+
+    .options-modal-content, .aux-table-modal-data{
+        width: 75%;
+    }
+}
+
+@media (max-height:800px){
+
+    .dataset-lbl-wrapper{
+        height: 100px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-color: white rgb(32, 32, 32);
+        scrollbar-width: thin;
+    }
+    
+}
