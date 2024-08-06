@@ -5,17 +5,17 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"/>
         <title>Fiscal</title>
-        <link rel="icon" href= "{% static '/img/icons8-us-dollar-32.png' %}" />
-        <link rel="stylesheet" href= "{% static '/css/fiscalquery.css' %}"/>
-        <link rel="stylesheet" href= "{% static '/css/fiscal_posts.css' %}"/>
+        <link rel="icon" href= "{% static 'img/icons8-us-dollar-32.png' %}" />
+        <link rel="stylesheet" href= "{% static 'css/fiscalquery.css' %}"/>
+        <link rel="stylesheet" href= "{% static 'css/fiscal_posts.css' %}"/>
         <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js" ></script>
-        <script type="module" src= "{% static '/script/fiscalquery.js' %}"></script>
+        <script type="module" src= "{% static 'script/fiscalquery.js' %}"></script>
         {% block script_n_style %}
         {% endblock %}
     </head>
     <div class="mobile-header">
-        <img class="mb-icon-logo" src= "{% static '/img/icons8-us-dollar.svg' %}" width= 30px></img>
-        <img class="mb-icon-menu" src= "{% static '/img/icons8-whitemenu.svg' %}" width= 30px></img>
+        <img class="mb-icon-logo" src= "{% static 'img/icons8-us-dollar.svg' %}" width= 30px></img>
+        <img class="mb-icon-menu" src= "{% static 'img/icons8-whitemenu.svg' %}" width= 30px></img>
         <span class="header-tabs">
             <button type="button" class="mb-tab-btn" id="mb-tab-1">Overview</button>
             <button type="button" class="mb-tab-btn" id="mb-tab-2">Posts</button>
@@ -26,7 +26,7 @@
         <div class="sidebar">
             <span class="sidebar-close">&times;</span>
             <div class="logo-n-icon">
-                <img class= "icon-logo" src= "{% static '/img/icons8-us-dollar.svg' %}" width= 30px></img>
+                <img class= "icon-logo" src= "{% static 'img/icons8-us-dollar.svg' %}" width= 30px></img>
                 <div class="logo">FiscalQuery</div>
             </div> 
             <div class="divider"></div>
@@ -56,13 +56,13 @@
                 </div>
                 <div class="expd-n-debt">
                     <div class="main-series" id="main-series-1">
-                        <img class="helper-icon" id="hlpr-USGovExpenditures" src= "{% static '/img/icons8-help.svg' %}" width=25px/>
+                        <img class="helper-icon" id="hlpr-USGovExpenditures" src= "{% static 'img/icons8-help.svg' %}" width=25px/>
                         <div class= "chartcontainer">
                             <canvas id="MainSeriesCht"></canvas>
                         </div>
                     </div>
                     <div class="main-series" id="main-series-2">
-                        <img class="helper-icon" id="hlpr-USGovDebt" src= "{% static '/img/icons8-help.svg' %}" width=25px/>
+                        <img class="helper-icon" id="hlpr-USGovDebt" src= "{% static 'img/icons8-help.svg' %}" width=25px/>
                         <div class= "debt-chartcontainer">
                             <canvas id="debt-series-cht"></canvas>
                         </div>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="aux1-header">
                         <div class="aux1-header-items">
-                            <img class="helper-icon" id="hlpr-USGovOutlays" src= "{% static '/img/icons8-help.svg' %}" width=25px/>
+                            <img class="helper-icon" id="hlpr-USGovOutlays" src= "{% static 'img/icons8-help.svg' %}" width=25px/>
                             <div id="aux1-title"></div>
                             <div class="subtitle" id="aux1-subtitle">Class Details</div>
                         </div>
@@ -94,7 +94,7 @@
                 <div class="receipts-n-aux">
                     <div class="receipts-aux">
                         <div>Receipts By</br>Type</br></br></div>
-                        <img class="helper-icon" id="hlpr-USGovReceipts" src= "{% static '/img/icons8-help.svg' %}" width=25px/>
+                        <img class="helper-icon" id="hlpr-USGovReceipts" src= "{% static 'img/icons8-help.svg' %}" width=25px/>
                     </div>
                     <div class="receipts-cht-container">
                         <canvas id="receipts-cht"></canvas>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="select-econ-data">
                     <div class="econ-title">Select</br>Economic</br>Data</br></br>
-                        <img class="helper-icon" id="hlpr-SelectEconData" src= "{% static '/img/icons8-help.svg' %}" width=25px/>
+                        <img class="helper-icon" id="hlpr-SelectEconData" src= "{% static 'img/icons8-help.svg' %}" width=25px/>
                     </div>
                     <div class="econ-data-groups">
                         <div class="econ-group-1">
@@ -122,7 +122,7 @@
             <div class="options-modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <img src= "{% static '/img/icons8-list.svg' %}" width=30px  class= "modal-icon"/> 
+                    <img src= "{% static 'img/icons8-list.svg' %}" width=30px  class= "modal-icon"/> 
                     <h2 class ="modal-header-text"></h2>
                 </div>
                 <div class="modal-body">
