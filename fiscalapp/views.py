@@ -8,12 +8,11 @@ import sqlalchemy as db
 
 IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 
-# if IS_HEROKU_APP:
-#    engine = db.create_engine(f"mssql+pymssql://{os.environ.get('UQNT_USER')}:{os.environ.get('UQNT_PASS')}@{os.environ.get('UQNT_SERVER')}:1433/{os.environ.get('UQNT_DB')}")
-# else:
-from . import uqntdb as udb
-engine = db.create_engine(f"mssql+pymssql://{udb.UQNT_USER}:{udb.UQNT_PASS}@{udb.UQNT_SERVER}:1433/{udb.UQNT_DB}")
-
+if IS_HEROKU_APP:
+   engine = db.create_engine(f"mssql+pymssql://{os.environ.get('UQNT_USER')}:{os.environ.get('UQNT_PASS')}@{os.environ.get('UQNT_SERVER')}:1433/{os.environ.get('UQNT_DB')}")
+else:
+    from . import uqntdb as udb
+    engine = db.create_engine(f"mssql+pymssql://{udb.UQNT_USER}:{udb.UQNT_PASS}@{udb.UQNT_SERVER}:1433/{udb.UQNT_DB}")
 
 def EconData(request, startDate, endDate):
     cnxn = engine.connect()
