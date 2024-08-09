@@ -166,3 +166,12 @@ cython_debug/
 
 # Database
 *.sqlite3
+
+## debugging
+#.hintrc
+#.vscode
+#test.css
+#test.html
+#test.js
+#wip.js
+#wip.py

@@ -6,6 +6,8 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 
+handler500 = 'fiscalapp.views.handler500'
+
 # Patterns match with 'root/fiscal/'
 urlpatterns = [
     path('', views.fiscal, name = 'fiscal'),
