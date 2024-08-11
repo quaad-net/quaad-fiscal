@@ -31,16 +31,15 @@ load_dotenv(env_path)
 # SECRET_KEY = 'django-insecure-1#$qjrc%(wai67^dpi^u4it+vg=n40-rpemk8v7(@=!a62!_-z'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-&psk#na5l=p3q8_a+-$4w1f^lt3lx1c@d*p4x$ymm_rn7pwb87')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 # DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 # The `DYNO` env var is set on Heroku CI, but it's not a real Heroku app, so we have to
 # also explicitly exclude CI:
 # https://devcenter.heroku.com/articles/heroku-ci#immutable-environment-variables
-IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
-if not IS_HEROKU_APP:
-    DEBUG = True
+# IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
+# if not IS_HEROKU_APP:
+#     DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
