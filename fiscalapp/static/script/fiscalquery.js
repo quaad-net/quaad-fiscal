@@ -1004,7 +1004,7 @@ function aboutFiscal(){
     rowSect.appendChild(dv2)
 
     const dv3 = document.createElement('div')
-    dv3.textContent = 'Github: https://github.com/quaad-net/fiscal.git'
+    dv3.textContent = 'Github: https://github.com/quaad-net/quaad-fiscal'
     dv3.setAttribute('class', 'aux-table-modal-row')
     rowSect.appendChild(dv3)
 
