@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
+    path('', views.handler500),
     path('admin/', admin.site.urls),
     path('fiscal/', include('fiscalapp.urls')),
     re_path(r'^.*/$', views.handler500),
