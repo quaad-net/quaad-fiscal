@@ -7,12 +7,15 @@ from sklearn import preprocessing
 import sqlalchemy as db
 from dotenv import load_dotenv
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-env_path = load_dotenv(os.path.join(BASE_DIR, '.env'))
-load_dotenv(env_path)
-engine = db.create_engine(f"mssql+pymssql://{os.environ.get('UQNT_USER')}:{os.environ.get('UQNT_PASS')}@{os.environ.get('UQNT_SERVER')}:1433/{os.environ.get('UQNT_DB')}")
-
 IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
+
+if IS_HEROKU_APP:
+   engine = db.create_engine(f"mssql+pymssql://{os.environ.get('UQNT_USER')}:{os.environ.get('UQNT_PASS')}@{os.environ.get('UQNT_SERVER')}:1433/{os.environ.get('UQNT_DB')}")
+else: 
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    env_path = load_dotenv(os.path.join(BASE_DIR, '.env'))
+    load_dotenv(env_path)
+    engine = db.create_engine(f"mssql+pymssql://{os.environ.get('UQNT_USER')}:{os.environ.get('UQNT_PASS')}@{os.environ.get('UQNT_SERVER')}:1433/{os.environ.get('UQNT_DB')}")
 
 def EconData(request, startDate, endDate):
     try:
