@@ -31,7 +31,7 @@ load_dotenv(env_path)
 # SECRET_KEY = 'django-insecure-1#$qjrc%(wai67^dpi^u4it+vg=n40-rpemk8v7(@=!a62!_-z'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-&psk#na5l=p3q8_a+-$4w1f^lt3lx1c@d*p4x$ymm_rn7pwb87')
 
-DEBUG = True
+DEBUG = False
 # DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 # The `DYNO` env var is set on Heroku CI, but it's not a real Heroku app, so we have to
@@ -108,29 +108,6 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-# if 'DATABASE_URL' in os.environ:
-#     DATABASES['default'] = dj_database_url.config(
-#         conn_max_age=500,
-#         conn_health_checks=True,
-#     )
-
-# DATABASES = {
-#     "default": dj_database_url.config(
-#         env="DATABASE_URL",
-#         conn_max_age=600,
-#         conn_health_checks=True,
-#         ssl_require=True,
-#     ),
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
