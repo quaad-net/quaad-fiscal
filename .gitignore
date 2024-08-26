@@ -170,8 +170,8 @@ cython_debug/
 ## debugging
 #.hintrc
 #.vscode
-#test.css
-#test.html
-#test.js
-#wip.js
-#wip.py
+test.css
+test.html
+test.js
+wip.js
+wip.py
