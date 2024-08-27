@@ -168,8 +168,8 @@ cython_debug/
 *.sqlite3
 
 ## debugging
-#.hintrc
-#.vscode
+.hintrc
+.vscode
 test.css
 test.html
 test.js
