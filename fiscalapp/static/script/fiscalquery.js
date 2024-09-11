@@ -1,6 +1,6 @@
-import { mySeriesColor, myBkGrd } from '/staticfiles/script/seriesColors.js'
-import { getPosts } from '/staticfiles/script/fiscalPosts.js'
-import { origins as or } from '/staticfiles/script/dataHelpers.js'
+import { mySeriesColor, myBkGrd } from '/static/script/seriesColors.js'
+import { getPosts } from '/static/script/fiscalPosts.js'
+import { origins as or } from '/static/script/dataHelpers.js'
 
 // DOM vars
 var startDate
