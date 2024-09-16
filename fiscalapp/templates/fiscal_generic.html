@@ -1,6 +1,5 @@
 <!doctype html>
 {% load static %}
-{% load esm %}
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -9,7 +8,6 @@
         <link rel="icon" href= "{% static 'img/icons8-us-dollar-32.png' %}" />
         <link rel="stylesheet" href= "{% static 'css/fiscalquery.css' %}"/>
         <link rel="stylesheet" href= "{% static 'css/fiscal_posts.css' %}"/>
-        <script type="importmap">{% importmap %}</script>
         <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js" ></script>
         <script type="module" src= "{% static 'script/fiscalquery.js' %}"></script>
         {% block script_n_style %}
