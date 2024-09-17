@@ -1,7 +1,7 @@
-// import { mySeriesColor, myBkGrd } from './seriesColors.js'
-// import { getPosts } from './fiscalPosts.js'
-// import { origins as or } from './dataHelpers.js'
-
+// Note dependencies:
+// { mySeriesColor, myBkGrd } from './seriesColors.js'
+// { getPosts } from './fiscalPosts.js'
+// { origins } from './dataHelpers.js'
 
 // DOM vars
 var startDate
@@ -26,18 +26,18 @@ var MSeriesExists = false
 var fedDebtChart
 var outlaysCht;
 var dataForChts
-const dt = new Date()
-const curYr =  dt.getFullYear()
-const myStartYr = curYr - 6
-const myEndYr = curYr - 1
-let myTopOutlaysClassID
-let myOtherOutlaysVals
-let myOtherOutlaysList
-let SubClassList
-let prevYearTtl = []
-let receiptsBarChart
-let qryStart, qryEnd
-let curPage = 'Overview'
+var dt = new Date()
+var curYr =  dt.getFullYear()
+var myStartYr = curYr - 6
+var myEndYr = curYr - 1
+var myTopOutlaysClassID
+var myOtherOutlaysVals
+var myOtherOutlaysList
+var SubClassList
+var prevYearTtl = []
+var receiptsBarChart
+var qryStart, qryEnd
+var curPage = 'Overview'
 
 // Event Listeners
 
@@ -398,18 +398,6 @@ function addDataSets(chart, label, newData) {
 
   chart.update();
 }
-
-// const plugin = {
-//   id: 'customCanvasBackgroundColor',
-//   beforeDraw: (chart, args, options) => {
-//     const {ctx} = chart;
-//     ctx.save();
-//     ctx.globalCompositeOperation = 'destination-over'
-//     ctx.fillStyle = options.color || '#99ffff'
-//     ctx.fillRect(0, 0, chart.width, chart.height)
-//     ctx.restore()
-//   }
-// };
 
 function createMainSeries(category, yrs, vals) {
   

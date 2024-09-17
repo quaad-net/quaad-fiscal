@@ -1,4 +1,4 @@
-// import { mySeriesColor } from './seriesColors.js'
+// Note dependencies: { mySeriesColor } from './seriesColors.js'
 
 function addDataSetsX(chart, label, newData) {
   chart.data.datasets.push( 

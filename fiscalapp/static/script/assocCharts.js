@@ -1,4 +1,4 @@
-// import { createStackedBar, createTimeSeries, createScatterPlot} from './jsCharts.js'
+// Note dependencies: { createStackedBar, createTimeSeries, createScatterPlot } from './jsCharts.js'
 
 function assocCharts(scriptID, JSONdata, canvas, canvas2){
     
