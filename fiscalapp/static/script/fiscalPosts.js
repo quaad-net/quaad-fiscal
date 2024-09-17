@@ -1,6 +1,6 @@
-import { assocCharts } from './assocCharts.js'
+// import { assocCharts } from './assocCharts.js'
 
-export async function getPosts(){
+async function getPosts(){
 
     const allPostsReq = await fetch('posts/getposts')
     const allPostsTxt = await allPostsReq.text()

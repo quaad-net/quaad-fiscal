@@ -1,4 +1,4 @@
-export function createModal(btnID, title){
+function createModal(btnID, title){
 
   var modal = document.getElementById("options-modal");
   var btn = document.getElementById(btnID);

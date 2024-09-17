@@ -1,6 +1,6 @@
-import { mySeriesColor } from './seriesColors.js'
+// import { mySeriesColor } from './seriesColors.js'
 
-export function addDataSetsX(chart, label, newData) {
+function addDataSetsX(chart, label, newData) {
   chart.data.datasets.push( 
     {
       label: label,
@@ -11,7 +11,7 @@ export function addDataSetsX(chart, label, newData) {
   chart.update();
 }
 
-export function createScatterPlot(canvas, backgroundColor, label, dataSet){
+function createScatterPlot(canvas, backgroundColor, label, dataSet){
   Chart.defaults.font.family = "poppins, sans-serif";
   Chart.defaults.font.size = 13;
   Chart.defaults.color = 'white';
@@ -67,7 +67,7 @@ export function createScatterPlot(canvas, backgroundColor, label, dataSet){
   )
 }
 
-export function createStackedBar(categories, yrs, vals, canvas, title) {
+function createStackedBar(categories, yrs, vals, canvas, title) {
 
   //two story stack bar
 
@@ -121,7 +121,7 @@ export function createStackedBar(categories, yrs, vals, canvas, title) {
   )
 }
 
-export function createTimeSeries(category, yrs, vals, canvas, addSets, addLabels, title) {
+function createTimeSeries(category, yrs, vals, canvas, addSets, addLabels, title) {
   
     Chart.defaults.font.family = "poppins, sans-serif"; //"Times, 'Times New Roman', serif, Georgia";
     Chart.defaults.font.size = 13;

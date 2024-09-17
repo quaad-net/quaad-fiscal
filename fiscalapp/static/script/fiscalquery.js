@@ -1,6 +1,6 @@
-import { mySeriesColor, myBkGrd } from './seriesColors.js'
-import { getPosts } from './fiscalPosts.js'
-import { origins as or } from './dataHelpers.js'
+// import { mySeriesColor, myBkGrd } from './seriesColors.js'
+// import { getPosts } from './fiscalPosts.js'
+// import { origins as or } from './dataHelpers.js'
 
 
 // DOM vars
@@ -74,7 +74,7 @@ function hlprIconListn(){
         rowSect.removeChild(rowSect.firstChild)
       }
       const dv = document.createElement('div')
-      dv.textContent = or.getOrigin(c.id).source
+      dv.textContent = origins.getOrigin(c.id).source
       dv.setAttribute('class', 'aux-table-modal-row')
       dv.setAttribute('id', 'hlpr-info')
       rowSect.appendChild(dv)
@@ -399,17 +399,17 @@ function addDataSets(chart, label, newData) {
   chart.update();
 }
 
-const plugin = {
-  id: 'customCanvasBackgroundColor',
-  beforeDraw: (chart, args, options) => {
-    const {ctx} = chart;
-    ctx.save();
-    ctx.globalCompositeOperation = 'destination-over'
-    ctx.fillStyle = options.color || '#99ffff'
-    ctx.fillRect(0, 0, chart.width, chart.height)
-    ctx.restore()
-  }
-};
+// const plugin = {
+//   id: 'customCanvasBackgroundColor',
+//   beforeDraw: (chart, args, options) => {
+//     const {ctx} = chart;
+//     ctx.save();
+//     ctx.globalCompositeOperation = 'destination-over'
+//     ctx.fillStyle = options.color || '#99ffff'
+//     ctx.fillRect(0, 0, chart.width, chart.height)
+//     ctx.restore()
+//   }
+// };
 
 function createMainSeries(category, yrs, vals) {
   

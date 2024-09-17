@@ -1,5 +1,5 @@
 
-export const origins = {
+const origins = {
 
     // note: html tag IDs = hlpr-objectName
     SelectEconData: {

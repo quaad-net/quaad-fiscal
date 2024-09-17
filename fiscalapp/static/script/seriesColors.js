@@ -30,10 +30,10 @@ mySeriesColor.set('contrib_for_gov_social_insur', '#680106')
 mySeriesColor.set('income_receipts_on_assets', '#980209')
 mySeriesColor.set('current_transfer_receipts', '#c8030c')
 
-export { mySeriesColor }
+//export { mySeriesColor }
 
 //mySeriesColor.get(category);
 
-export const myBkGrd = [     // Used in expenditures/outlays doughnut chart  
+const myBkGrd = [     // Used in expenditures/outlays doughnut chart  
       '#191970', '#000080', '#00008B', '#0000CD', '#0000FF', '#4169E1', '#4682B4', '#6495ED', '#1E90FF', '#B0C4DE',
 ]
