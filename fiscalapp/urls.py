@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 
-handler500 = 'fiscalapp.views.handler500'
+# handler500 = 'fiscalapp.views.handler500'
 
 # Patterns match with 'root/fiscal/'
 urlpatterns = [
@@ -25,5 +25,5 @@ urlpatterns = [
     re_path(r'^q-outlays-(?P<year>\d+)', views.update_outlays, name= 'outlays'),
     re_path(r'^q-outlays-drilldown-(?P<classID>\d+)', views.gov_outlays_tbl_drilldown),
     path('test/', views.test, name= 'test'),
-    re_path(r'^.*/$', views.handler500),
+    #re_path(r'^.*/$', views.handler500),
 ]
