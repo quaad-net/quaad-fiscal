@@ -33,6 +33,8 @@ def fiscal_posts(request):
     return render(request, 'fiscal_posts.html')
         
 async def fiscalquery(request, startDate, endDate):
+    
+    raise('Test Error')
     cnxn = engine.connect()
 
     PrevYr = int(startDate) - 1
