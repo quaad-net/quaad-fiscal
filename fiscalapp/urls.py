@@ -8,7 +8,7 @@ from django.views.static import serve
 
 # handler500 = 'fiscalapp.views.handler500'
 
-# Patterns match with 'root/fiscal/'
+# Patterns match with 'root/fiscal/...'
 urlpatterns = [
     path('', views.fiscal, name = 'fiscal'),
     re_path(r'imports-n-exports/q-(?P<startDate>\d+)/' + r'(?P<endDate>\d+)', views.ImportsExports),
